@@ -90,7 +90,7 @@ GRANT ALL PRIVILEGES ON TABLE work_entries TO your_db_user;
 
 ## 3. Set Up the project.env File for Deno
 
-### Step 1:
+### Step 1: project.env:
 
 POSTGRES_USER=your_db_user
 POSTGRES_PASSWORD=your_password
@@ -99,7 +99,7 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 
 
-### Step 2:
+### Step 2: database.js file:
 
 import { load } from "https://deno.land/std/dotenv/mod.ts";
 import postgres from "https://deno.land/x/postgresjs@v3.4.2/mod.js";
