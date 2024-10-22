@@ -7,6 +7,12 @@ This SETUP.md guide provides detailed instructions for setting up the PostgreSQL
 
 You have two options of how to create a database for local use: as a Superuser(one user for all your databases) or create a new user and password for your database. Choose the option suitable for you. Here you have details of how to use both options.
 
+## Navigation
+- [Create a PostgreSQL Database as a Superuser)](#1-create-a-postgresql-database-for-local-use-superuser)
+- [Create a PostgreSQL Database with Specific Credentials](#2-create-a-postgresql-database-with-specific-credentials)
+- [Set Up the project.env and database.js Files for Deno](#3-set-up-the-projectenv-file-for-deno)
+- [Run the Deno App](#run-the-deno-app)
+
 ## 1. Create a PostgreSQL Database for Local Use (Superuser)
 
 ### Step 1: Log in to PostgreSQL as the `postgres` superuser

@@ -17,6 +17,10 @@ A simple task management application that allows users to create tasks, complete
 - Simple 3-tier architecture (Client-Server-Database)
 - Layered architecture with Views, Controllers, Services, and Database
 
+## Navigation
+- [Setup Guide](setup.md)
+
+
 ### Setup
 
 1. Copy the `project.env.example` to `project.env`:
