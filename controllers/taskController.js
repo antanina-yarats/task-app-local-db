@@ -16,7 +16,7 @@ const addTask = async (request) => {
 
   await taskService.create(name);
 
-  return requestUtils.redirectTo("/tasks");
+  return await requestUtils.redirectTo("/tasks");
 };
 
 const viewTask = async (request) => {

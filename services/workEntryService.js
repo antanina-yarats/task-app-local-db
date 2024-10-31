@@ -6,9 +6,13 @@ const createWorkEntry = async (taskId) => {
     VALUES (${taskId}, NOW())`;
 };
 
+// findCurrentWorkEntry  checks if the task is in progress and the time is ticking.
+
 const findCurrentWorkEntry = async (taskId) => {
   const rows = await sql`SELECT * FROM work_entries
     WHERE task_id = ${ taskId } AND finished_on IS NULL`;
+
+    // meaning the entry hasn’t been completed (i.e., it’s currently in progress).
 
   if (rows && rows.length > 0) {
     return rows[0];
